@@ -9,6 +9,10 @@ void fungsi(int *b) { // menggunakan pointer untuk mengambil address saja
     cout << "  nilai dari b " << *b << "\n"; // menggunakan dereferencing untuk menampilkan nilai dari si variabel
 }
 
+// kalau di pointer ia tetap akan memakan memori yang berbeda
+// karena pointer b akan menyimpan address dari si variabel
+// jadi kalau mau hemat memori, pakailah reference
+
 void kuadrat(int *valPtr) {
     *valPtr = (*valPtr) * (*valPtr); // ini yang dimaksud tidak perlu return lagi
 } // tadinya membuat fungsi kuadrat perlu mereturn nilainya, jika menggunakan void, kita harus langsung menampilkannya
